@@ -1,0 +1,294 @@
+/* style.cc heb ik alles uitgeprobeerd en alles gebruikt wat ik al ken en in mijn hoofd zit, als ik ergens geen oplossing op wist heb ik het een klasgenoot gevraagd, op www.w3schools.com en het boek html+css */
+/* Fonts */
+
+@font-face {
+    font-family: "bebasneue-regular";
+    src: url(./fonts/bebasneue-regular.ttf);
+}
+
+/* Navigatie */
+.ul1 {
+    background-color: #072EC2;
+    font-family: bebasneue-regular;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.a1 {
+    color: white;
+    text-decoration: none;
+    margin: 1em;
+
+}
+
+a:hover {
+    color: #4CD066;
+    ;
+}
+
+.icoon {
+    width: 40px;
+}
+
+/* Body */
+body {
+    margin: 0px;
+    background-color: #072EC2;
+}
+
+video {
+    width: 100%;
+}
+
+p {
+    font-family: bebasneue-regular;
+    font-size: 16px;
+    color: white;
+    margin: 30px;
+}
+
+
+/* Programma & Nieuws */
+
+.ul2 {
+    background-color: #072EC2;
+    font-family: bebasneue-regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 20px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    margin: 20px;
+    padding: 30px
+}
+
+article {
+    background-image: url(afbeeldingen/achtergrond.png);
+    margin-right: 40px;
+}
+
+
+.img1 {
+    width: 500px;
+    margin: 30px;
+    border: solid 40px;
+    border-color: #4CD066;
+
+}
+
+.img2 {
+    width: 30px;
+    margin-left: 550px;
+    margin-bottom: -74px;
+}
+
+h1 {
+    font-family: bebasneue-regular;
+    font-size: 40px;
+    background-color: #4CD066;
+    margin: 30px;
+}
+
+.p2 {
+    background-color: #4CD066;
+    font-size: 20px;
+}
+
+.icoon1 {
+    width: 20px;
+}
+
+#countdown {
+    width: 1385px;
+    margin: 30px;
+}
+
+/* Formulier */
+#tickets {
+    background-color: #4CD066;
+    margin: 50px;
+    margin-left: 640px;
+    width: 200px;
+    height: 75px;
+    font-family: bebasneue-regular;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.p1 {
+    margin-left: 45px;
+    margin-bottom: -28px;
+}
+
+legend {
+    font-family: bebasneue-regular;
+    color: white;
+    font-size: 30px;
+
+}
+
+input {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+    height: 15px;
+    padding: 10px;
+    display: grid;
+
+}
+
+.verstuur {
+    margin-top: 50px;
+    background-color: #4CD066;
+    font-family: bebasneue-regular;
+    font-size: 15px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+/* Tame Impala */
+
+.section2 {
+    display: flex;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+.article1 {
+    width: 100%;
+}
+
+.img3 {
+    width: 700px;
+    margin: 0px;
+    border: solid 80px;
+    border-color: #4CD066;
+}
+
+/* Footer */
+.ul3 {
+    background-color: #072EC2;
+    font-family: bebasneue-regular;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 20px;
+}
+
+.ul4 {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+
+}
+
+.logo {
+    width: 90px;
+}
+
+/* Media Queries */
+@media only screen and (max-width : 768px) {
+
+    /* Navigatie */
+
+    .ul1 {
+        font-size: 9px;
+    }
+
+    .icoon {
+        width: 5vw;
+        padding: 1px;
+        margin: -10px;
+    }
+
+    /* Programma */
+    .ul2 {
+        font-size: 14px;
+    }
+
+    .section1 {
+        grid-template-columns: 1fr;
+        grid-gap: 1vw;
+        width: 400px;
+    }
+
+    article {
+        width: 400px;
+    }
+
+    .img1 {
+        width: 60vw;
+        border: solid 20px;
+        border-color: #4CD066;
+
+    }
+
+    .img2 {
+        width: 20px;
+        margin-left: 330px;
+        margin-bottom: -70px;
+    }
+
+    #tickets {
+        margin-left: 200px;
+        width: 100px;
+        height: 50px;
+    }
+
+    #countdown {
+        width: 500px;
+        margin: 0px;
+    }
+
+    /* Tame Impala */
+    .section2 {
+        margin-right: -10px;
+
+    }
+
+    .article1 {
+        width: 100%;
+
+    }
+
+    .img3 {
+        width: 40vw;
+        border: solid 20px;
+        border-color: #4CD066;
+    }
+
+    /* Footer */
+    .ul3 {
+        font-size: 15px;
+    }
+
+    .ul4 {
+        padding: 40px;
+    }
+
+    .logo {
+        width: 10vw;
+        margin: -40px;
+        padding-bottom: 20px;
+    }
